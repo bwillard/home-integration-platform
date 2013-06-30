@@ -21,7 +21,7 @@ namespace ZWaveDeviceBridge
 
         public void SetFromSettings(Settings settings)
         {
-            //TODO(bwillard): Make settings a map and pull value stored in configFileKey
+            Value = settings.ConfigSettings[configFileKey];
         }
     }
 }

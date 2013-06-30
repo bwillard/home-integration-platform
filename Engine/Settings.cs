@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,31 +8,33 @@ using System.Xml.Serialization;
 
 namespace ZWaveDeviceBridge
 {
-    [Serializable]
     public class Settings
     {
-        private static String FileName = "../../../Settings.xml";
+        private static String FileName = "../../../Settings.json";
 
-        public string TwilioAcccountSid { get; set; }
-        public string TwilioAuthToken { get; set; }
-        public string TwilioFromNumber { get; set; }
-
+        [JsonProperty]
+        public Dictionary<String, String> ConfigSettings { get; private set; }
 
         public static Settings LoadSettings()
         {
-            using (StreamReader myReader = new StreamReader(FileName, false))
+            if (File.Exists(FileName))
             {
-                XmlSerializer mySerializer = new XmlSerializer(typeof(Settings));
-                return (Settings)mySerializer.Deserialize(myReader);
+                using (StreamReader myReader = new StreamReader(FileName, false))
+                {
+                    return (Settings)JsonConvert.DeserializeObject<Settings>(myReader.ReadToEnd());
+                }
             }
+
+            Settings s =  new Settings();
+            s.ConfigSettings = new Dictionary<string, string>();
+            return s;
         }
 
         public void SaveSettings()
         {
             using (StreamWriter myWriter = new StreamWriter(FileName, false))
             {
-                XmlSerializer mySerializer = new XmlSerializer(typeof(Settings));
-                mySerializer.Serialize(myWriter, this);
+                myWriter.Write(JsonConvert.SerializeObject(this, Formatting.Indented));
             }
         }
     }

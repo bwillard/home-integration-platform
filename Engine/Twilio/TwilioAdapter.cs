@@ -10,9 +10,9 @@ namespace ZWaveDeviceBridge.Twilio
     class TwilioAdapter : AdapterBase, INotifyingAdapter
     {
         private static AdapterConfiguration configuration = new AdapterConfiguration(new AdaperConfigurationValue[] {
-            new AdaperConfigurationValue("Account Sid", "twilioAccountSid"),
-            new AdaperConfigurationValue("Auth Token", "twilioAuthToken"),
-            new AdaperConfigurationValue("TFrom Number", "twilioFromNumber"),
+            new AdaperConfigurationValue("Account Sid", "TwilioAccountSid"),
+            new AdaperConfigurationValue("Auth Token", "TwilioAuthToken"),
+            new AdaperConfigurationValue("TFrom Number", "TwilioFromNumber"),
         });
 
         private TwilioRestClient client;

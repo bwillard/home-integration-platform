@@ -1,0 +1,7 @@
+{
+  "ConfigSettings": {
+    "TwilioAcccountSid": "XXX",
+    "TwilioAuthToken": "XXX",
+    "TwilioFromNumber": "XXX"
+  }
+}
