@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Twilio;
+using ZWaveDeviceBridge.Adapters;
 
 namespace ZWaveDeviceBridge.Twilio
 {
-    class TwilioAdapter : AdapterBase
+    class TwilioAdapter : AdapterBase, INotifyingAdapter
     {
         private static AdapterConfiguration configuration = new AdapterConfiguration(new AdaperConfigurationValue[] {
             new AdaperConfigurationValue("Account Sid", "twilioAccountSid"),
@@ -23,7 +24,7 @@ namespace ZWaveDeviceBridge.Twilio
             this.fromNumber = configuration.GetValue("twilioFromNumber");
         }
 
-        public void SendText(string toNumber, string message)
+        public void Notify(string toNumber, string message)
         {
             this.client.SendSmsMessage(this.fromNumber, toNumber, message);
         }

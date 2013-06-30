@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceManagement", "DeviceM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZWaveWrappers", "ZWaveWrappers\ZWaveWrappers.csproj", "{88A7CD71-4E7E-4F03-BD9C-57D24026E0E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZWaveDeviceBridge", "ZWaveDeviceBridge\ZWaveDeviceBridge.csproj", "{FFE1177B-B8AD-4C6D-89E6-06F76397D87C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "ZWaveDeviceBridge\Engine.csproj", "{FFE1177B-B8AD-4C6D-89E6-06F76397D87C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataObjects", "DataObjects\DataObjects.csproj", "{E7E385C0-E9A1-4D65-818F-EA013FC188BC}"
 EndProject
