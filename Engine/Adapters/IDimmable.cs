@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ZWaveDeviceBridge.Adapters
+namespace HomeIntegrationPlatform.Engine.Adapters
 {
     public interface IDimmable
     {

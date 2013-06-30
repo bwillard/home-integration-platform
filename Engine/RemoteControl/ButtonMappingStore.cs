@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace ZWaveDeviceBridge.RemoteControl
+namespace HomeIntegrationPlatform.Engine.RemoteControl
 {
     class ButtonMappingStore
     {

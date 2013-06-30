@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Twilio;
-using ZWaveDeviceBridge.Adapters;
+using HomeIntegrationPlatform.Engine.Adapters;
+using HomeIntegrationPlatform.Engine;
 
-namespace ZWaveDeviceBridge.Twilio
+namespace HomeIntegrationPlatform.BuiltInAdapters
 {
     class TwilioAdapter : AdapterBase, INotifyingAdapter
     {

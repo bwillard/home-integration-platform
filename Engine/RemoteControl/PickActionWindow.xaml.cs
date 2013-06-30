@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ZWaveDeviceBridge.RemoteControl
+namespace HomeIntegrationPlatform.Engine.RemoteControl
 {
     /// <summary>
     /// Interaction logic for PickActionWindow.xaml

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ZWaveDeviceBridge
+namespace HomeIntegrationPlatform.Engine
 {
-    abstract class AdapterBase
+    public abstract class AdapterBase
     {
         private Settings settings;
         protected AdapterBase(AdapterConfiguration configuration, Settings settings)

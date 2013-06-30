@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ZWaveDeviceBridge
+namespace HomeIntegrationPlatform.Engine
 {
-    class AdapterConfiguration
+    public class AdapterConfiguration
     {
         private Dictionary<string, AdaperConfigurationValue> values = new Dictionary<string, AdaperConfigurationValue>();
 

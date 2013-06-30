@@ -1,8 +1,8 @@
-﻿<Window x:Class="ZWaveDeviceBridge.MainWindow"
+﻿<Window x:Class="HomeIntegrationPlatform.Engine.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Wrappers="clr-namespace:ZWaveWrappers.Interfaces;assembly=ZWaveWrappers"
-        xmlns:RC="clr-namespace:ZWaveDeviceBridge.RemoteControl"
+        xmlns:RC="clr-namespace:HomeIntegrationPlatform.Engine.RemoteControl"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <Style TargetType="{x:Type FrameworkElement}" x:Key="TextBlockStyle">

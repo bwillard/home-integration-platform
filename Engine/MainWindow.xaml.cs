@@ -15,9 +15,9 @@ using ZWaveWrappers;
 using ZWaveWrappers.Interfaces;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using ZWaveDeviceBridge.RemoteControl;
+using HomeIntegrationPlatform.Engine.RemoteControl;
 
-namespace ZWaveDeviceBridge
+namespace HomeIntegrationPlatform.Engine
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

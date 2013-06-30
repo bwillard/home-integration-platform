@@ -1,4 +1,4 @@
-﻿namespace ZWaveDeviceBridge.RemoteControl
+﻿namespace HomeIntegrationPlatform.Engine.RemoteControl
 {
     enum ButtonType
     {

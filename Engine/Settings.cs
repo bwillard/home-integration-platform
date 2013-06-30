@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace ZWaveDeviceBridge
+namespace HomeIntegrationPlatform.Engine
 {
     public class Settings
     {

@@ -8,8 +8,8 @@
     <ProjectGuid>{FFE1177B-B8AD-4C6D-89E6-06F76397D87C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZWaveDeviceBridge</RootNamespace>
-    <AssemblyName>ZWaveDeviceBridge</AssemblyName>
+    <RootNamespace>HomeIntegrationPlatform.Engine</RootNamespace>
+    <AssemblyName>HomeIntegrationPlatform.Engine</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -93,7 +93,6 @@
       <DependentUpon>PickActionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="Twilio\TwilioAdapter.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

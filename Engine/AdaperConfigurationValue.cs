@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ZWaveDeviceBridge
+namespace HomeIntegrationPlatform.Engine
 {
-    class AdaperConfigurationValue
+    public class AdaperConfigurationValue
     {
         private string configFileKey;
 

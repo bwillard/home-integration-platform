@@ -9,7 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Threading;
 
-namespace ZWaveDeviceBridge.RemoteControl
+namespace HomeIntegrationPlatform.Engine.RemoteControl
 {
     class ButtonHandler
     {
