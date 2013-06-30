@@ -1,5 +1,4 @@
-Home Integration Platform
-=========================
+# Home Integration Platform
 
 The goal of the Home Integration Platform is to be an open
 platform for connecting devices in your home to each other
@@ -11,8 +10,8 @@ As an example we want to let you:
  * Turn on the lights when a door opens
 
 
-Overall Design
---------------
+## Overall Design
+
 
 The overall idea is to have 2 + N parts
 
