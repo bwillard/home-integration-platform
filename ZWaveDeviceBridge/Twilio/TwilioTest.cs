@@ -20,7 +20,6 @@ namespace ZWaveDeviceBridge.Twilio
         public void SendText(string toNumber, string message)
         {
             this.client.SendSmsMessage(this.fromNumber, toNumber, message);
-                
         }
     }
 }
