@@ -93,10 +93,12 @@
     <Compile Include="RemoteControl\PickActionWindow.xaml.cs">
       <DependentUpon>PickActionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="StatusData\DeviceStatus.cs" />
     <Compile Include="StatusData\DeviceStatusRepository.cs" />
     <Compile Include="StatusData\IDeviceStatusRepository.cs" />
     <Compile Include="IXSSPolicy.cs" />
+    <Compile Include="Twilio\TwilioTest.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -175,6 +177,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

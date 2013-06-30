@@ -28,6 +28,7 @@ namespace ZWaveDeviceBridge
         public static Wrapper Wrapper {get;set;}
         //private ServiceHost m_serviceHost;
         private ButtonHandler m_buttonHandler;
+        private Settings settings = Settings.LoadSettings();
 
         public MainWindow()
         {
