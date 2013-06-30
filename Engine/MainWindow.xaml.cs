@@ -14,7 +14,6 @@ using System.Windows.Shapes;
 using ZWaveWrappers;
 using ZWaveWrappers.Interfaces;
 using System.ServiceModel;
-using ZWaveDeviceBridge.DataService;
 using System.ServiceModel.Description;
 using ZWaveDeviceBridge.RemoteControl;
 
@@ -26,7 +25,6 @@ namespace ZWaveDeviceBridge
     public partial class MainWindow : Window
     {        
         public static Wrapper Wrapper {get;set;}
-        //private ServiceHost m_serviceHost;
         private ButtonHandler m_buttonHandler;
         private Settings settings = Settings.LoadSettings();
 
@@ -47,18 +45,6 @@ namespace ZWaveDeviceBridge
             {
                 Console.WriteLine(e);
             }
-
-
-
-            /*m_serviceHost = new ServiceHost(typeof(HomeStatusService));
-            try
-            {
-                m_serviceHost.Open();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Couldn't start HomeStatusService: " + e);
-            }*/
         }
 
         private void SwitchToggleClicked(object sender, RoutedEventArgs e)

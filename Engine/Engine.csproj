@@ -73,9 +73,6 @@
     <Compile Include="AdapterBase.cs" />
     <Compile Include="AdapterConfiguration.cs" />
     <Compile Include="Adapters\INotifyingAdapter.cs" />
-    <Compile Include="DataService\HomeStatusService.cs" />
-    <Compile Include="DataService\IHomeServiceView.cs" />
-    <Compile Include="DataService\IHomeStatusService.cs" />
     <Compile Include="Extensions .cs" />
     <Compile Include="RemoteControl\ButtonAction.cs" />
     <Compile Include="RemoteControl\ButtonHandler.cs" />
@@ -89,7 +86,6 @@
       <DependentUpon>PickActionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="IXSSPolicy.cs" />
     <Compile Include="Twilio\TwilioAdapter.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -154,11 +150,6 @@
       <Project>{88A7CD71-4E7E-4F03-BD9C-57D24026E0E5}</Project>
       <Name>ZWaveWrappers</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="hibernate.cfg.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Mappings\DeviceStatus.hbm.xml" />
