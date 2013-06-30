@@ -1,0 +1,16 @@
+﻿<Window x:Class="ZWaveDeviceBridge.RemoteControl.PickActionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pick an Action" Height="100" Width="300">
+    <StackPanel>
+        <ComboBox Name="Data">
+            <ComboBox.Items>
+                <ComboBoxItem Content="On" IsSelected="True"/>
+                <ComboBoxItem Content="Off"/>
+                <ComboBoxItem Content="Up"/>
+                <ComboBoxItem Content="Down"/>
+            </ComboBox.Items>
+        </ComboBox>
+        <Button Content="Ok" IsDefault="True" Click="OKClicked"/>
+    </StackPanel>
+</Window>

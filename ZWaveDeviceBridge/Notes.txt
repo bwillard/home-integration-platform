@@ -1,0 +1,2 @@
+﻿To not require admin acess for the WCF service use the command:
+netsh http add urlacl url=http://+:8000/HomeStatusService user=bwillard-laptop\bwillard
