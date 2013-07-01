@@ -7,12 +7,9 @@ namespace HomeIntegrationPlatform.Engine
 {
     public class AdaperConfigurationValue
     {
-        private string configFileKey;
-
-        public AdaperConfigurationValue(String name, String configFileKey)
+        public AdaperConfigurationValue(string name)
         {
             this.Name = name;
-            this.configFileKey = configFileKey;
         }
 
         public string Name { get; private set; }
@@ -21,7 +18,7 @@ namespace HomeIntegrationPlatform.Engine
 
         public void SetFromSettings(Settings settings)
         {
-            Value = settings.ConfigSettings[configFileKey];
+            Value = settings.ConfigSettings[Name];
         }
     }
 }

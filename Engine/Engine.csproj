@@ -77,6 +77,7 @@
     <Compile Include="AdaperConfigurationValue.cs" />
     <Compile Include="AdapterBase.cs" />
     <Compile Include="AdapterConfiguration.cs" />
+    <Compile Include="Adapters\AdapterLoader.cs" />
     <Compile Include="Adapters\IDimmable.cs" />
     <Compile Include="Adapters\INotifyingAdapter.cs" />
     <Compile Include="Adapters\IToggle.cs" />

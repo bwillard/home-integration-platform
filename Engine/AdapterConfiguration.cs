@@ -16,8 +16,12 @@ namespace HomeIntegrationPlatform.Engine
             }
         }
 
-        public String GetValue(String key)
+        public String GetValue(string key)
         {
+            if (!values.ContainsKey(key))
+            {
+                throw new ArgumentException(key + " not found", "key");
+            }
             return values[key].Value;
         }
 

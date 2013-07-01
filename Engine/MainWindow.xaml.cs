@@ -16,6 +16,7 @@ using ZWaveWrappers.Interfaces;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using HomeIntegrationPlatform.Engine.RemoteControl;
+using HomeIntegrationPlatform.Engine.Adapters;
 
 namespace HomeIntegrationPlatform.Engine
 {
@@ -27,6 +28,7 @@ namespace HomeIntegrationPlatform.Engine
         public static Wrapper Wrapper {get;set;}
         private ButtonHandler m_buttonHandler;
         private Settings settings = Settings.LoadSettings();
+        private AdapterLoader adapterLoader = new AdapterLoader();
 
         public MainWindow()
         {
@@ -35,6 +37,10 @@ namespace HomeIntegrationPlatform.Engine
 
             try
             {
+                foreach (string assembly in settings.AssembliesToLoad)
+                {
+                    adapterLoader.LoadAdapters(assembly);
+                }
                 Wrapper = new ZWaveWrappers.Wrapper(Mode.Online);
                 m_buttonHandler = new ButtonHandler(Wrapper.Controller.Devices);
 

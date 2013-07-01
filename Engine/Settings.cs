@@ -10,10 +10,19 @@ namespace HomeIntegrationPlatform.Engine
 {
     public class Settings
     {
-        private static String FileName = "../../../Settings.json";
+        private static string FileName = "../../../Settings.json";
+
+        public Settings()
+        {
+            ConfigSettings = new Dictionary<string, string>();
+            AssembliesToLoad = new List<string>();
+        }
 
         [JsonProperty]
-        public Dictionary<String, String> ConfigSettings { get; private set; }
+        public Dictionary<string, string> ConfigSettings { get; private set; }
+
+        [JsonProperty]
+        public List<string> AssembliesToLoad { get; private set; }
 
         public static Settings LoadSettings()
         {
@@ -25,9 +34,7 @@ namespace HomeIntegrationPlatform.Engine
                 }
             }
 
-            Settings s =  new Settings();
-            s.ConfigSettings = new Dictionary<string, string>();
-            return s;
+            return new Settings();
         }
 
         public void SaveSettings()
