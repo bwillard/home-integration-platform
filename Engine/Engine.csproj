@@ -81,6 +81,8 @@
     <Compile Include="Adapters\IDimmable.cs" />
     <Compile Include="Adapters\INotifyingAdapter.cs" />
     <Compile Include="Adapters\IToggle.cs" />
+    <Compile Include="Connectors\ThresholdConnector.cs" />
+    <Compile Include="Connectors\ToggledConnector.cs" />
     <Compile Include="Extensions .cs" />
     <Compile Include="RemoteControl\ButtonAction.cs" />
     <Compile Include="RemoteControl\ButtonHandler.cs" />

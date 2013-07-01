@@ -11,5 +11,7 @@ namespace HomeIntegrationPlatform.Engine.Adapters
         void TurnOff();
 
         bool IsOn();
+
+        event Action<bool> Toggled;
     }
 }

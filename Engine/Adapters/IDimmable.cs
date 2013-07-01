@@ -9,5 +9,7 @@ namespace HomeIntegrationPlatform.Engine.Adapters
     {
         void SetLevel(int level);
         int GetLevel();
+
+        event Action<int> LevelChanged;
     }
 }
